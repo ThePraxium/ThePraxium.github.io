@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Transformation</title>
+    <!-- Add CSS file here if you have one -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+  </head>
+  <body>
+    <form id="transform-form" enctype="multipart/form-data">
+      <input type="file" id="photo" name="photo" accept="image/*">
+      <select id="transform-type" name="transform-type">
+        <option value="medieval">Medieval</option>
+        <option value="scifi">Sci-Fi</option>
+        <option value="cowboybebop">Cowboy Bebop</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- This is where the transformed image will be displayed -->
+    <img id="transformed-image" src="" alt="Transformed image">
+
+    <!-- JavaScript file -->
+    <script src="formHandler.js"></script>
+  </body>
+</html>
