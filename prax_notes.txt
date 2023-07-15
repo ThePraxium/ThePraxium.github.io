@@ -4,6 +4,7 @@ I isntalled node and chocolatey locally to run the server.js
 cd *\thepraxium.github.io
 npm install express multer
 
+ssh aitester@74.235.153.39
 
 https://docs.imagineapi.dev/
 
