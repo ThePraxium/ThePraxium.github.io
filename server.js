@@ -1,22 +1,10 @@
 const express = require('express');
-const multer  = require('multer');
-const upload = multer({ dest: 'uploads/' });
-
+const path = require('path');
 const app = express();
+const port = 3000;
 
-app.use(express.json()); // for parsing application/json
-app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.use(express.static('public'));
 
-app.post('/transform', upload.single('photo'), function (req, res, next) {
-  console.log('Received transformation request:');
-  console.log('Transform type:', req.body['transform-type']);
-  console.log('Photo:', req.file);
-  
-  let transformType = req.body['transform-type'];
-  let photoPath = req.file.path;
-  // TODO: Send 'photoPath' and 'transformType' to the AI tool.
-});
-
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(port, () => {
+  console.log(`App listening at http://localhost:${port}`);
 });

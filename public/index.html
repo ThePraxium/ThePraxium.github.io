@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Theme App</title>
+    <style>
+        img {
+            max-width: 400px;
+            max-height: 400px;
+        }
+        #themeText {
+            font-family: Arial;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Photo Theme App</h1>
+    <form id="uploadForm">
+        <input type="file" id="photoUpload" accept="image/*">
+        <select id="themeSelect">
+            <option value="Cowboy Bebop">Cowboy Bebop</option>
+            <option value="Medieval">Medieval</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="preview">
+        <img id="previewImage" src="#" alt="Uploaded Image">
+        <p id="themeText"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+I isntalled node and chocolatey locally to run the server.js
+    I used the websites LTS download for windows. No shame.
+    turns out i need an admin PS to run npm -v and ndoe -v to check install...
+cd *\thepraxium.github.io
+npm install express multer
