@@ -1,18 +1,21 @@
-I isntalled node and chocolatey locally to run the server.js
-    I used the websites LTS download for windows. No shame.
-    turns out i need an admin PS to run npm -v and ndoe -v to check install...
-cd *\thepraxium.github.io
-npm install express multer
+1.	Install ubuntu
+2.	Update Ubuntu
+3.	Write some basic firewall rules for the webserver. 
+4.	Install Apache, MySQL, git, node.js, ELK stack,
+5.	Generate and install the SSL cert with letsencrypt
+6.	Git init and Git pull https://github.com/ThePraxium/ThePraxium.github.io.git 
+7.	Set up an admin user on the server, only admin can interact with or see any files
+8. looking at loyalportrait.com
 
 ssh aitester@74.235.153.39
-
+H@xin4Funzies
 https://docs.imagineapi.dev/
 
 
 1.	Customer uploads photo.
-o	Must be downloaded to server to move on
-o	Think about how long to hold onto photo
-	24 hours
+    o   Must be downloaded to server to move on
+    o	Think about how long to hold onto photo
+        	24 hours
 2.	Interrogate photo
 3.	Photo is NOT bad, then is sent to processing
 4.	Processing
@@ -21,23 +24,37 @@ o	Think about how long to hold onto photo
 6.	Logging
 7.	Prevent malicious uploads
 8.	Acquire domain
-o	Low hanging fruit
+    o	Low hanging fruit
 9.	Written description for SEO scraping
 10.	Captcha to prevent spam.
 11.	Low resource linux vm as poc
-o	1 cpu core | 512mb ram
-o	load balance
-o	CDN
-	Think cloudflare, anti ddos
+    o	1 cpu core | 512mb ram
+    o	load balance
+    o	CDN
+        	Think cloudflare, anti ddos
 12.	Domain anonymity
 13.	TLS cert
 14.	Google ad account
-o	Just put $50 in 
+    o	Just put $50 in 
 15.	PCI
-o	Use third parties.
+    o	Use third parties.
 16.	Receipts 
-o	Stripe accurate receipts
+    o	Stripe accurate receipts
 17.	Flask
-o	API backend friendly
-o	Easy to upload to
-o	And then working with python
+    o	API backend friendly
+    o	Easy to upload to
+    o	And then working with python
+
+
+Build Steps:
+Install live server on VS code.
+
+Server: 
+    sudo apt install git
+    ssh-keygen -t ed25519 -C "praxium@mcpa@gmail.com"
+        Set passphrase
+        add the pub to git
+    eval "$(ssh-agent -s)"
+    ssh-add to_git (whatever private key was)
+    git pull git@github.com:ThePraxium/ThePraxium.github.io.git
+        use passphrase
